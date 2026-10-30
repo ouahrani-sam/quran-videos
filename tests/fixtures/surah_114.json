@@ -1,0 +1,207 @@
+{
+  "surah": 114,
+  "riwaya": "hafs",
+  "title_ar": "الناس",
+  "title_en": "Mankind",
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+    "translit": "bis'mi l-lahi l-raḥmāni l-raḥīmi",
+    "english": "In the name of Allāh, the Entirely Merciful, the Especially Merciful.",
+    "words": [
+      {
+        "i": 0,
+        "arabic": "بِسْمِ",
+        "norm": "بسم",
+        "translit": "bis'mi"
+      },
+      {
+        "i": 1,
+        "arabic": "ٱللَّهِ",
+        "norm": "الله",
+        "translit": "l-lahi"
+      },
+      {
+        "i": 2,
+        "arabic": "ٱلرَّحْمَـٰنِ",
+        "norm": "الرحمن",
+        "translit": "l-raḥmāni"
+      },
+      {
+        "i": 3,
+        "arabic": "ٱلرَّحِيمِ",
+        "norm": "الرحيم",
+        "translit": "l-raḥīmi"
+      }
+    ]
+  },
+  "ayahs": [
+    {
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "translit": "qul aʿūdhu birabbi l-nāsi",
+      "english": "Say, \"I seek refuge in the Lord of mankind,",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "قُلْ",
+          "norm": "قل",
+          "translit": "qul"
+        },
+        {
+          "i": 1,
+          "arabic": "أَعُوذُ",
+          "norm": "اعوذ",
+          "translit": "aʿūdhu"
+        },
+        {
+          "i": 2,
+          "arabic": "بِرَبِّ",
+          "norm": "برب",
+          "translit": "birabbi"
+        },
+        {
+          "i": 3,
+          "arabic": "ٱلنَّاسِ",
+          "norm": "الناس",
+          "translit": "l-nāsi"
+        }
+      ],
+      "n": 1
+    },
+    {
+      "arabic": "مَلِكِ ٱلنَّاسِ",
+      "translit": "maliki l-nāsi",
+      "english": "The Sovereign of mankind,",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "مَلِكِ",
+          "norm": "ملك",
+          "translit": "maliki"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلنَّاسِ",
+          "norm": "الناس",
+          "translit": "l-nāsi"
+        }
+      ],
+      "n": 2
+    },
+    {
+      "arabic": "إِلَـٰهِ ٱلنَّاسِ",
+      "translit": "ilāhi l-nāsi",
+      "english": "The God of mankind,",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "إِلَـٰهِ",
+          "norm": "اله",
+          "translit": "ilāhi"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلنَّاسِ",
+          "norm": "الناس",
+          "translit": "l-nāsi"
+        }
+      ],
+      "n": 3
+    },
+    {
+      "arabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+      "translit": "min sharri l-waswāsi l-khanāsi",
+      "english": "From the evil of the retreating whisperer -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "مِن",
+          "norm": "من",
+          "translit": "min"
+        },
+        {
+          "i": 1,
+          "arabic": "شَرِّ",
+          "norm": "شر",
+          "translit": "sharri"
+        },
+        {
+          "i": 2,
+          "arabic": "ٱلْوَسْوَاسِ",
+          "norm": "الوسواس",
+          "translit": "l-waswāsi"
+        },
+        {
+          "i": 3,
+          "arabic": "ٱلْخَنَّاسِ",
+          "norm": "الخناس",
+          "translit": "l-khanāsi"
+        }
+      ],
+      "n": 4
+    },
+    {
+      "arabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+      "translit": "alladhī yuwaswisu fī ṣudūri l-nāsi",
+      "english": "Who whispers [evil] into the breasts of mankind -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "ٱلَّذِى",
+          "norm": "الذي",
+          "translit": "alladhī"
+        },
+        {
+          "i": 1,
+          "arabic": "يُوَسْوِسُ",
+          "norm": "يوسوس",
+          "translit": "yuwaswisu"
+        },
+        {
+          "i": 2,
+          "arabic": "فِى",
+          "norm": "في",
+          "translit": "fī"
+        },
+        {
+          "i": 3,
+          "arabic": "صُدُورِ",
+          "norm": "صدور",
+          "translit": "ṣudūri"
+        },
+        {
+          "i": 4,
+          "arabic": "ٱلنَّاسِ",
+          "norm": "الناس",
+          "translit": "l-nāsi"
+        }
+      ],
+      "n": 5
+    },
+    {
+      "arabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "translit": "mina l-jinati wal-nāsi",
+      "english": "From among the jinn and mankind\".",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "مِنَ",
+          "norm": "من",
+          "translit": "mina"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْجِنَّةِ",
+          "norm": "الجنه",
+          "translit": "l-jinati"
+        },
+        {
+          "i": 2,
+          "arabic": "وَٱلنَّاسِ",
+          "norm": "والناس",
+          "translit": "wal-nāsi"
+        }
+      ],
+      "n": 6
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "surah": 93,
+  "riwaya": "hafs",
+  "title_ar": "الضحى",
+  "title_en": "The Morning Hours",
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+    "translit": "bis'mi l-lahi l-raḥmāni l-raḥīmi",
+    "english": "In the name of Allāh, the Entirely Merciful, the Especially Merciful.",
+    "words": [
+      {
+        "i": 0,
+        "arabic": "بِسْمِ",
+        "norm": "بسم",
+        "translit": "bis'mi"
+      },
+      {
+        "i": 1,
+        "arabic": "ٱللَّهِ",
+        "norm": "الله",
+        "translit": "l-lahi"
+      },
+      {
+        "i": 2,
+        "arabic": "ٱلرَّحْمَـٰنِ",
+        "norm": "الرحمن",
+        "translit": "l-raḥmāni"
+      },
+      {
+        "i": 3,
+        "arabic": "ٱلرَّحِيمِ",
+        "norm": "الرحيم",
+        "translit": "l-raḥīmi"
+      }
+    ]
+  },
+  "ayahs": [
+    {
+      "arabic": "وَٱلضُّحَىٰ",
+      "translit": "wal-ḍuḥā",
+      "english": "By the morning brightness",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَٱلضُّحَىٰ",
+          "norm": "والضحي",
+          "translit": "wal-ḍuḥā"
+        }
+      ],
+      "n": 1
+    },
+    {
+      "arabic": "وَٱلَّيْلِ إِذَا سَجَىٰ",
+      "translit": "wa-al-layli idhā sajā",
+      "english": "And [by] the night when it covers with darkness,",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَٱلَّيْلِ",
+          "norm": "واليل",
+          "translit": "wa-al-layli"
+        },
+        {
+          "i": 1,
+          "arabic": "إِذَا",
+          "norm": "اذا",
+          "translit": "idhā"
+        },
+        {
+          "i": 2,
+          "arabic": "سَجَىٰ",
+          "norm": "سجي",
+          "translit": "sajā"
+        }
+      ],
+      "n": 2
+    },
+    {
+      "arabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+      "translit": "mā waddaʿaka rabbuka wamā qalā",
+      "english": "Your Lord has not taken leave of you, [O Muḥammad], nor has He detested [you].",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "مَا",
+          "norm": "ما",
+          "translit": "mā"
+        },
+        {
+          "i": 1,
+          "arabic": "وَدَّعَكَ",
+          "norm": "ودعك",
+          "translit": "waddaʿaka"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبُّكَ",
+          "norm": "ربك",
+          "translit": "rabbuka"
+        },
+        {
+          "i": 3,
+          "arabic": "وَمَا",
+          "norm": "وما",
+          "translit": "wamā"
+        },
+        {
+          "i": 4,
+          "arabic": "قَلَىٰ",
+          "norm": "قلي",
+          "translit": "qalā"
+        }
+      ],
+      "n": 3
+    },
+    {
+      "arabic": "وَلَلْـَٔاخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ",
+      "translit": "walalākhiratu khayrun laka mina l-ūlā",
+      "english": "And the Hereafter is better for you than the first [life].",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَلَلْـَٔاخِرَةُ",
+          "norm": "وللاخره",
+          "translit": "walalākhiratu"
+        },
+        {
+          "i": 1,
+          "arabic": "خَيْرٌۭ",
+          "norm": "خير",
+          "translit": "khayrun"
+        },
+        {
+          "i": 2,
+          "arabic": "لَّكَ",
+          "norm": "لك",
+          "translit": "laka"
+        },
+        {
+          "i": 3,
+          "arabic": "مِنَ",
+          "norm": "من",
+          "translit": "mina"
+        },
+        {
+          "i": 4,
+          "arabic": "ٱلْأُولَىٰ",
+          "norm": "الاولي",
+          "translit": "l-ūlā"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 4
+    },
+    {
+      "arabic": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+      "translit": "walasawfa yuʿ'ṭīka rabbuka fatarḍā",
+      "english": "And your Lord is going to give you, and you will be satisfied.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَلَسَوْفَ",
+          "norm": "ولسوف",
+          "translit": "walasawfa"
+        },
+        {
+          "i": 1,
+          "arabic": "يُعْطِيكَ",
+          "norm": "يعطيك",
+          "translit": "yuʿ'ṭīka"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبُّكَ",
+          "norm": "ربك",
+          "translit": "rabbuka"
+        },
+        {
+          "i": 3,
+          "arabic": "فَتَرْضَىٰٓ",
+          "norm": "فترضي",
+          "translit": "fatarḍā"
+        }
+      ],
+      "n": 5
+    },
+    {
+      "arabic": "أَلَمْ يَجِدْكَ يَتِيمًا فَـَٔاوَىٰ",
+      "translit": "alam yajid'ka yatīman faāwā",
+      "english": "Did He not find you an orphan and give [you] refuge?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "أَلَمْ",
+          "norm": "الم",
+          "translit": "alam"
+        },
+        {
+          "i": 1,
+          "arabic": "يَجِدْكَ",
+          "norm": "يجدك",
+          "translit": "yajid'ka"
+        },
+        {
+          "i": 2,
+          "arabic": "يَتِيمًۭا",
+          "norm": "يتيما",
+          "translit": "yatīman"
+        },
+        {
+          "i": 3,
+          "arabic": "فَـَٔاوَىٰ",
+          "norm": "فاوي",
+          "translit": "faāwā"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 6
+    },
+    {
+      "arabic": "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ",
+      "translit": "wawajadaka ḍāllan fahadā",
+      "english": "And He found you lost and guided [you],",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَوَجَدَكَ",
+          "norm": "ووجدك",
+          "translit": "wawajadaka"
+        },
+        {
+          "i": 1,
+          "arabic": "ضَآلًّۭا",
+          "norm": "ضالا",
+          "translit": "ḍāllan"
+        },
+        {
+          "i": 2,
+          "arabic": "فَهَدَىٰ",
+          "norm": "فهدي",
+          "translit": "fahadā"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 7
+    },
+    {
+      "arabic": "وَوَجَدَكَ عَآئِلًا فَأَغْنَىٰ",
+      "translit": "wawajadaka ʿāilan fa-aghnā",
+      "english": "And He found you poor and made [you] self-sufficient.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَوَجَدَكَ",
+          "norm": "ووجدك",
+          "translit": "wawajadaka"
+        },
+        {
+          "i": 1,
+          "arabic": "عَآئِلًۭا",
+          "norm": "عائلا",
+          "translit": "ʿāilan"
+        },
+        {
+          "i": 2,
+          "arabic": "فَأَغْنَىٰ",
+          "norm": "فاغني",
+          "translit": "fa-aghnā"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 8
+    },
+    {
+      "arabic": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+      "translit": "fa-ammā l-yatīma falā taqhar",
+      "english": "So as for the orphan, do not oppress [him].",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَأَمَّا",
+          "norm": "فاما",
+          "translit": "fa-ammā"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْيَتِيمَ",
+          "norm": "اليتيم",
+          "translit": "l-yatīma"
+        },
+        {
+          "i": 2,
+          "arabic": "فَلَا",
+          "norm": "فلا",
+          "translit": "falā"
+        },
+        {
+          "i": 3,
+          "arabic": "تَقْهَرْ",
+          "norm": "تقهر",
+          "translit": "taqhar"
+        }
+      ],
+      "n": 9
+    },
+    {
+      "arabic": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
+      "translit": "wa-ammā l-sāila falā tanhar",
+      "english": "And as for the petitioner, do not repel [him].",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَأَمَّا",
+          "norm": "واما",
+          "translit": "wa-ammā"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلسَّآئِلَ",
+          "norm": "السائل",
+          "translit": "l-sāila"
+        },
+        {
+          "i": 2,
+          "arabic": "فَلَا",
+          "norm": "فلا",
+          "translit": "falā"
+        },
+        {
+          "i": 3,
+          "arabic": "تَنْهَرْ",
+          "norm": "تنهر",
+          "translit": "tanhar"
+        }
+      ],
+      "n": 10
+    },
+    {
+      "arabic": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+      "translit": "wa-ammā biniʿ'mati rabbika faḥaddith",
+      "english": "But as for the favor of your Lord, report [it].",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَأَمَّا",
+          "norm": "واما",
+          "translit": "wa-ammā"
+        },
+        {
+          "i": 1,
+          "arabic": "بِنِعْمَةِ",
+          "norm": "بنعمه",
+          "translit": "biniʿ'mati"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكَ",
+          "norm": "ربك",
+          "translit": "rabbika"
+        },
+        {
+          "i": 3,
+          "arabic": "فَحَدِّثْ",
+          "norm": "فحدث",
+          "translit": "faḥaddith"
+        }
+      ],
+      "n": 11
+    }
+  ]
+}

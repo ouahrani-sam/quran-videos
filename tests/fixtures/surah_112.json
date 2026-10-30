@@ -1,0 +1,161 @@
+{
+  "surah": 112,
+  "riwaya": "hafs",
+  "title_ar": "الإخلاص",
+  "title_en": "The Sincerity",
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+    "translit": "bis'mi l-lahi l-raḥmāni l-raḥīmi",
+    "english": "In the name of Allāh, the Entirely Merciful, the Especially Merciful.",
+    "words": [
+      {
+        "i": 0,
+        "arabic": "بِسْمِ",
+        "norm": "بسم",
+        "translit": "bis'mi"
+      },
+      {
+        "i": 1,
+        "arabic": "ٱللَّهِ",
+        "norm": "الله",
+        "translit": "l-lahi"
+      },
+      {
+        "i": 2,
+        "arabic": "ٱلرَّحْمَـٰنِ",
+        "norm": "الرحمن",
+        "translit": "l-raḥmāni"
+      },
+      {
+        "i": 3,
+        "arabic": "ٱلرَّحِيمِ",
+        "norm": "الرحيم",
+        "translit": "l-raḥīmi"
+      }
+    ]
+  },
+  "ayahs": [
+    {
+      "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+      "translit": "qul huwa l-lahu aḥadun",
+      "english": "Say, \"He is Allāh, [who is] One,",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "قُلْ",
+          "norm": "قل",
+          "translit": "qul"
+        },
+        {
+          "i": 1,
+          "arabic": "هُوَ",
+          "norm": "هو",
+          "translit": "huwa"
+        },
+        {
+          "i": 2,
+          "arabic": "ٱللَّهُ",
+          "norm": "الله",
+          "translit": "l-lahu"
+        },
+        {
+          "i": 3,
+          "arabic": "أَحَدٌ",
+          "norm": "احد",
+          "translit": "aḥadun"
+        }
+      ],
+      "n": 1
+    },
+    {
+      "arabic": "ٱللَّهُ ٱلصَّمَدُ",
+      "translit": "al-lahu l-ṣamadu",
+      "english": "Allāh, the Eternal Refuge.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "ٱللَّهُ",
+          "norm": "الله",
+          "translit": "al-lahu"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلصَّمَدُ",
+          "norm": "الصمد",
+          "translit": "l-ṣamadu"
+        }
+      ],
+      "n": 2
+    },
+    {
+      "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+      "translit": "lam yalid walam yūlad",
+      "english": "He neither begets nor is born,",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "لَمْ",
+          "norm": "لم",
+          "translit": "lam"
+        },
+        {
+          "i": 1,
+          "arabic": "يَلِدْ",
+          "norm": "يلد",
+          "translit": "yalid"
+        },
+        {
+          "i": 2,
+          "arabic": "وَلَمْ",
+          "norm": "ولم",
+          "translit": "walam"
+        },
+        {
+          "i": 3,
+          "arabic": "يُولَدْ",
+          "norm": "يولد",
+          "translit": "yūlad"
+        }
+      ],
+      "n": 3
+    },
+    {
+      "arabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+      "translit": "walam yakun lahu kufuwan aḥadun",
+      "english": "Nor is there to Him any equivalent.\"",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَلَمْ",
+          "norm": "ولم",
+          "translit": "walam"
+        },
+        {
+          "i": 1,
+          "arabic": "يَكُن",
+          "norm": "يكن",
+          "translit": "yakun"
+        },
+        {
+          "i": 2,
+          "arabic": "لَّهُۥ",
+          "norm": "لهۥ",
+          "translit": "lahu"
+        },
+        {
+          "i": 3,
+          "arabic": "كُفُوًا",
+          "norm": "كفوا",
+          "translit": "kufuwan"
+        },
+        {
+          "i": 4,
+          "arabic": "أَحَدٌۢ",
+          "norm": "احد",
+          "translit": "aḥadun"
+        }
+      ],
+      "n": 4
+    }
+  ]
+}

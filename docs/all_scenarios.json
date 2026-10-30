@@ -1,0 +1,110 @@
+{
+  "scenarios": [
+    {
+      "scenario": "clean",
+      "surah": 114,
+      "bismillah_expected": true,
+      "window": 4,
+      "expected": {
+        "kept_ayahs": [1, 2, 3, 4, 5, 6],
+        "dropped": [],
+        "flags": []
+      }
+    },
+    {
+      "scenario": "repeat_last",
+      "surah": 114,
+      "bismillah_expected": true,
+      "window": 4,
+      "expected": {
+        "kept_ayahs": [1, 2, 3, 4, 5, 6],
+        "dropped": [{"reason": "superseded_repeat"}],
+        "flags": []
+      }
+    },
+    {
+      "scenario": "restart_mid",
+      "surah": 114,
+      "bismillah_expected": true,
+      "window": 4,
+      "expected": {
+        "kept_ayahs": [1, 2, 3, 4, 5, 6],
+        "dropped": [{"reason": "abandoned_partial"}],
+        "flags": [{"type": "partial_ayah"}]
+      }
+    },
+    {
+      "scenario": "back_4",
+      "surah": 114,
+      "bismillah_expected": true,
+      "window": 4,
+      "expected": {
+        "kept_ayahs": [1, 2, 3, 4, 5, 6],
+        "dropped": [{"reason": "superseded_repeat"}],
+        "flags": []
+      }
+    },
+    {
+      "scenario": "back_5",
+      "surah": 114,
+      "bismillah_expected": true,
+      "window": 4,
+      "expected": {
+        "kept_ayahs": [1, 2, 3, 4, 5, 6],
+        "dropped": [{"reason": "unmatched"}],
+        "flags": [{"type": "out_of_window"}]
+      }
+    },
+    {
+      "scenario": "two_takes",
+      "surah": 114,
+      "bismillah_expected": true,
+      "window": 4,
+      "expected": {
+        "kept_ayahs": [1, 2, 3, 4, 5, 6],
+        "dropped": [],
+        "flags": []
+      }
+    },
+    {
+      "scenario": "errors",
+      "surah": 114,
+      "bismillah_expected": true,
+      "window": 4,
+      "expected": {
+        "kept_ayahs": [1, 2, 3, 4, 5, 6],
+        "dropped": [
+          {"reason": "unmatched"},
+          {"reason": "abandoned_partial"}
+        ],
+        "flags": [
+          {"type": "unmatched_segment"},
+          {"type": "partial_ayah"},
+          {"type": "low_match_conf"}
+        ]
+      }
+    },
+    {
+      "scenario": "no_pause",
+      "surah": 114,
+      "bismillah_expected": true,
+      "window": 4,
+      "expected": {
+        "kept_ayahs": [1, 2, 3, 4, 5, 6],
+        "dropped": [],
+        "flags": []
+      }
+    },
+    {
+      "scenario": "no_bismillah",
+      "surah": 114,
+      "bismillah_expected": false,
+      "window": 4,
+      "expected": {
+        "kept_ayahs": [1, 2, 3, 4, 5, 6],
+        "dropped": [],
+        "flags": []
+      }
+    }
+  ]
+}

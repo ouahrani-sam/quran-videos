@@ -1,0 +1,2790 @@
+{
+  "surah": 55,
+  "riwaya": "hafs",
+  "title_ar": "الرحمن",
+  "title_en": "The Beneficent",
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+    "translit": "bis'mi l-lahi l-raḥmāni l-raḥīmi",
+    "english": "In the name of Allāh, the Entirely Merciful, the Especially Merciful.",
+    "words": [
+      {
+        "i": 0,
+        "arabic": "بِسْمِ",
+        "norm": "بسم",
+        "translit": "bis'mi"
+      },
+      {
+        "i": 1,
+        "arabic": "ٱللَّهِ",
+        "norm": "الله",
+        "translit": "l-lahi"
+      },
+      {
+        "i": 2,
+        "arabic": "ٱلرَّحْمَـٰنِ",
+        "norm": "الرحمن",
+        "translit": "l-raḥmāni"
+      },
+      {
+        "i": 3,
+        "arabic": "ٱلرَّحِيمِ",
+        "norm": "الرحيم",
+        "translit": "l-raḥīmi"
+      }
+    ]
+  },
+  "ayahs": [
+    {
+      "arabic": "ٱلرَّحْمَـٰنُ",
+      "translit": "al-raḥmānu",
+      "english": "The Most Merciful",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "ٱلرَّحْمَـٰنُ",
+          "norm": "الرحمن",
+          "translit": "al-raḥmānu"
+        }
+      ],
+      "n": 1
+    },
+    {
+      "arabic": "عَلَّمَ ٱلْقُرْءَانَ",
+      "translit": "ʿallama l-qur'āna",
+      "english": "Taught the Qur’ān,",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "عَلَّمَ",
+          "norm": "علم",
+          "translit": "ʿallama"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْقُرْءَانَ",
+          "norm": "القرءان",
+          "translit": "l-qur'āna"
+        }
+      ],
+      "n": 2
+    },
+    {
+      "arabic": "خَلَقَ ٱلْإِنسَـٰنَ",
+      "translit": "khalaqa l-insāna",
+      "english": "Created man,",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "خَلَقَ",
+          "norm": "خلق",
+          "translit": "khalaqa"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْإِنسَـٰنَ",
+          "norm": "الانسن",
+          "translit": "l-insāna"
+        }
+      ],
+      "n": 3
+    },
+    {
+      "arabic": "عَلَّمَهُ ٱلْبَيَانَ",
+      "translit": "ʿallamahu l-bayāna",
+      "english": "[And] taught him eloquence.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "عَلَّمَهُ",
+          "norm": "علمه",
+          "translit": "ʿallamahu"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْبَيَانَ",
+          "norm": "البيان",
+          "translit": "l-bayāna"
+        }
+      ],
+      "n": 4
+    },
+    {
+      "arabic": "ٱلشَّمْسُ وَٱلْقَمَرُ بِحُسْبَانٍ",
+      "translit": "al-shamsu wal-qamaru biḥus'bānin",
+      "english": "The sun and the moon [move] by precise calculation,",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "ٱلشَّمْسُ",
+          "norm": "الشمس",
+          "translit": "al-shamsu"
+        },
+        {
+          "i": 1,
+          "arabic": "وَٱلْقَمَرُ",
+          "norm": "والقمر",
+          "translit": "wal-qamaru"
+        },
+        {
+          "i": 2,
+          "arabic": "بِحُسْبَانٍۢ",
+          "norm": "بحسبان",
+          "translit": "biḥus'bānin"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 5
+    },
+    {
+      "arabic": "وَٱلنَّجْمُ وَٱلشَّجَرُ يَسْجُدَانِ",
+      "translit": "wal-najmu wal-shajaru yasjudāni",
+      "english": "And the stars and trees prostrate.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَٱلنَّجْمُ",
+          "norm": "والنجم",
+          "translit": "wal-najmu"
+        },
+        {
+          "i": 1,
+          "arabic": "وَٱلشَّجَرُ",
+          "norm": "والشجر",
+          "translit": "wal-shajaru"
+        },
+        {
+          "i": 2,
+          "arabic": "يَسْجُدَانِ",
+          "norm": "يسجدان",
+          "translit": "yasjudāni"
+        }
+      ],
+      "n": 6
+    },
+    {
+      "arabic": "وَٱلسَّمَآءَ رَفَعَهَا وَوَضَعَ ٱلْمِيزَانَ",
+      "translit": "wal-samāa rafaʿahā wawaḍaʿa l-mīzāna",
+      "english": "And the heaven He raised and imposed the balance",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَٱلسَّمَآءَ",
+          "norm": "والسماء",
+          "translit": "wal-samāa"
+        },
+        {
+          "i": 1,
+          "arabic": "رَفَعَهَا",
+          "norm": "رفعها",
+          "translit": "rafaʿahā"
+        },
+        {
+          "i": 2,
+          "arabic": "وَوَضَعَ",
+          "norm": "ووضع",
+          "translit": "wawaḍaʿa"
+        },
+        {
+          "i": 3,
+          "arabic": "ٱلْمِيزَانَ",
+          "norm": "الميزان",
+          "translit": "l-mīzāna"
+        }
+      ],
+      "n": 7
+    },
+    {
+      "arabic": "أَلَّا تَطْغَوْا۟ فِى ٱلْمِيزَانِ",
+      "translit": "allā taṭghaw fī l-mīzāni",
+      "english": "That you not transgress within the balance.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "أَلَّا",
+          "norm": "الا",
+          "translit": "allā"
+        },
+        {
+          "i": 1,
+          "arabic": "تَطْغَوْا۟",
+          "norm": "تطغوا",
+          "translit": "taṭghaw"
+        },
+        {
+          "i": 2,
+          "arabic": "فِى",
+          "norm": "في",
+          "translit": "fī"
+        },
+        {
+          "i": 3,
+          "arabic": "ٱلْمِيزَانِ",
+          "norm": "الميزان",
+          "translit": "l-mīzāni"
+        }
+      ],
+      "n": 8
+    },
+    {
+      "arabic": "وَأَقِيمُوا۟ ٱلْوَزْنَ بِٱلْقِسْطِ وَلَا تُخْسِرُوا۟ ٱلْمِيزَانَ",
+      "translit": "wa-aqīmū l-wazna bil-qis'ṭi walā tukh'sirū l-mīzāna",
+      "english": "And establish weight in justice and do not make deficient the balance.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَأَقِيمُوا۟",
+          "norm": "واقيموا",
+          "translit": "wa-aqīmū"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْوَزْنَ",
+          "norm": "الوزن",
+          "translit": "l-wazna"
+        },
+        {
+          "i": 2,
+          "arabic": "بِٱلْقِسْطِ",
+          "norm": "بالقسط",
+          "translit": "bil-qis'ṭi"
+        },
+        {
+          "i": 3,
+          "arabic": "وَلَا",
+          "norm": "ولا",
+          "translit": "walā"
+        },
+        {
+          "i": 4,
+          "arabic": "تُخْسِرُوا۟",
+          "norm": "تخسروا",
+          "translit": "tukh'sirū"
+        },
+        {
+          "i": 5,
+          "arabic": "ٱلْمِيزَانَ",
+          "norm": "الميزان",
+          "translit": "l-mīzāna"
+        }
+      ],
+      "n": 9
+    },
+    {
+      "arabic": "وَٱلْأَرْضَ وَضَعَهَا لِلْأَنَامِ",
+      "translit": "wal-arḍa waḍaʿahā lil'anāmi",
+      "english": "And the earth He laid [out] for the creatures.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَٱلْأَرْضَ",
+          "norm": "والارض",
+          "translit": "wal-arḍa"
+        },
+        {
+          "i": 1,
+          "arabic": "وَضَعَهَا",
+          "norm": "وضعها",
+          "translit": "waḍaʿahā"
+        },
+        {
+          "i": 2,
+          "arabic": "لِلْأَنَامِ",
+          "norm": "للانام",
+          "translit": "lil'anāmi"
+        }
+      ],
+      "n": 10
+    },
+    {
+      "arabic": "فِيهَا فَـٰكِهَةٌ وَٱلنَّخْلُ ذَاتُ ٱلْأَكْمَامِ",
+      "translit": "fīhā fākihatun wal-nakhlu dhātu l-akmāmi",
+      "english": "Therein is fruit and palm trees having sheaths [of dates]",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فِيهَا",
+          "norm": "فيها",
+          "translit": "fīhā"
+        },
+        {
+          "i": 1,
+          "arabic": "فَـٰكِهَةٌۭ",
+          "norm": "فكهه",
+          "translit": "fākihatun"
+        },
+        {
+          "i": 2,
+          "arabic": "وَٱلنَّخْلُ",
+          "norm": "والنخل",
+          "translit": "wal-nakhlu"
+        },
+        {
+          "i": 3,
+          "arabic": "ذَاتُ",
+          "norm": "ذات",
+          "translit": "dhātu"
+        },
+        {
+          "i": 4,
+          "arabic": "ٱلْأَكْمَامِ",
+          "norm": "الاكمام",
+          "translit": "l-akmāmi"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 11
+    },
+    {
+      "arabic": "وَٱلْحَبُّ ذُو ٱلْعَصْفِ وَٱلرَّيْحَانُ",
+      "translit": "wal-ḥabu dhū l-ʿaṣfi wal-rayḥānu",
+      "english": "And grain having husks and scented plants.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَٱلْحَبُّ",
+          "norm": "والحب",
+          "translit": "wal-ḥabu"
+        },
+        {
+          "i": 1,
+          "arabic": "ذُو",
+          "norm": "ذو",
+          "translit": "dhū"
+        },
+        {
+          "i": 2,
+          "arabic": "ٱلْعَصْفِ",
+          "norm": "العصف",
+          "translit": "l-ʿaṣfi"
+        },
+        {
+          "i": 3,
+          "arabic": "وَٱلرَّيْحَانُ",
+          "norm": "والريحان",
+          "translit": "wal-rayḥānu"
+        }
+      ],
+      "n": 12
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 13
+    },
+    {
+      "arabic": "خَلَقَ ٱلْإِنسَـٰنَ مِن صَلْصَـٰلٍ كَٱلْفَخَّارِ",
+      "translit": "khalaqa l-insāna min ṣalṣālin kal-fakhāri",
+      "english": "He created man from clay like [that of] pottery.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "خَلَقَ",
+          "norm": "خلق",
+          "translit": "khalaqa"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْإِنسَـٰنَ",
+          "norm": "الانسن",
+          "translit": "l-insāna"
+        },
+        {
+          "i": 2,
+          "arabic": "مِن",
+          "norm": "من",
+          "translit": "min"
+        },
+        {
+          "i": 3,
+          "arabic": "صَلْصَـٰلٍۢ",
+          "norm": "صلصل",
+          "translit": "ṣalṣālin"
+        },
+        {
+          "i": 4,
+          "arabic": "كَٱلْفَخَّارِ",
+          "norm": "كالفخار",
+          "translit": "kal-fakhāri"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 14
+    },
+    {
+      "arabic": "وَخَلَقَ ٱلْجَآنَّ مِن مَّارِجٍ مِّن نَّارٍ",
+      "translit": "wakhalaqa l-jāna min mārijin min nārin",
+      "english": "And He created the jinn from a smokeless flame of fire.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَخَلَقَ",
+          "norm": "وخلق",
+          "translit": "wakhalaqa"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْجَآنَّ",
+          "norm": "الجان",
+          "translit": "l-jāna"
+        },
+        {
+          "i": 2,
+          "arabic": "مِن",
+          "norm": "من",
+          "translit": "min"
+        },
+        {
+          "i": 3,
+          "arabic": "مَّارِجٍۢ",
+          "norm": "مارج",
+          "translit": "mārijin"
+        },
+        {
+          "i": 4,
+          "arabic": "مِّن",
+          "norm": "من",
+          "translit": "min"
+        },
+        {
+          "i": 5,
+          "arabic": "نَّارٍۢ",
+          "norm": "نار",
+          "translit": "nārin"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 15
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 16
+    },
+    {
+      "arabic": "رَبُّ ٱلْمَشْرِقَيْنِ وَرَبُّ ٱلْمَغْرِبَيْنِ",
+      "translit": "rabbu l-mashriqayni warabbu l-maghribayni",
+      "english": "[He is] Lord of the two sunrises and Lord of the two sunsets.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "رَبُّ",
+          "norm": "رب",
+          "translit": "rabbu"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْمَشْرِقَيْنِ",
+          "norm": "المشرقين",
+          "translit": "l-mashriqayni"
+        },
+        {
+          "i": 2,
+          "arabic": "وَرَبُّ",
+          "norm": "ورب",
+          "translit": "warabbu"
+        },
+        {
+          "i": 3,
+          "arabic": "ٱلْمَغْرِبَيْنِ",
+          "norm": "المغربين",
+          "translit": "l-maghribayni"
+        }
+      ],
+      "n": 17
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 18
+    },
+    {
+      "arabic": "مَرَجَ ٱلْبَحْرَيْنِ يَلْتَقِيَانِ",
+      "translit": "maraja l-baḥrayni yaltaqiyāni",
+      "english": "He released the two seas, meeting [one another];",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "مَرَجَ",
+          "norm": "مرج",
+          "translit": "maraja"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْبَحْرَيْنِ",
+          "norm": "البحرين",
+          "translit": "l-baḥrayni"
+        },
+        {
+          "i": 2,
+          "arabic": "يَلْتَقِيَانِ",
+          "norm": "يلتقيان",
+          "translit": "yaltaqiyāni"
+        }
+      ],
+      "n": 19
+    },
+    {
+      "arabic": "بَيْنَهُمَا بَرْزَخٌ لَّا يَبْغِيَانِ",
+      "translit": "baynahumā barzakhun lā yabghiyāni",
+      "english": "Between them is a barrier so neither of them transgresses.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "بَيْنَهُمَا",
+          "norm": "بينهما",
+          "translit": "baynahumā"
+        },
+        {
+          "i": 1,
+          "arabic": "بَرْزَخٌۭ",
+          "norm": "برزخ",
+          "translit": "barzakhun"
+        },
+        {
+          "i": 2,
+          "arabic": "لَّا",
+          "norm": "لا",
+          "translit": "lā"
+        },
+        {
+          "i": 3,
+          "arabic": "يَبْغِيَانِ",
+          "norm": "يبغيان",
+          "translit": "yabghiyāni"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 20
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 21
+    },
+    {
+      "arabic": "يَخْرُجُ مِنْهُمَا ٱللُّؤْلُؤُ وَٱلْمَرْجَانُ",
+      "translit": "yakhruju min'humā l-lu'lu-u wal-marjānu",
+      "english": "From both of them emerge pearl and coral.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "يَخْرُجُ",
+          "norm": "يخرج",
+          "translit": "yakhruju"
+        },
+        {
+          "i": 1,
+          "arabic": "مِنْهُمَا",
+          "norm": "منهما",
+          "translit": "min'humā"
+        },
+        {
+          "i": 2,
+          "arabic": "ٱللُّؤْلُؤُ",
+          "norm": "اللؤلؤ",
+          "translit": "l-lu'lu-u"
+        },
+        {
+          "i": 3,
+          "arabic": "وَٱلْمَرْجَانُ",
+          "norm": "والمرجان",
+          "translit": "wal-marjānu"
+        }
+      ],
+      "n": 22
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 23
+    },
+    {
+      "arabic": "وَلَهُ ٱلْجَوَارِ ٱلْمُنشَـَٔاتُ فِى ٱلْبَحْرِ كَٱلْأَعْلَـٰمِ",
+      "translit": "walahu l-jawāri l-munshaātu fī l-baḥri kal-aʿlāmi",
+      "english": "And to Him belong the ships [with sails] elevated in the sea like mountains.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَلَهُ",
+          "norm": "وله",
+          "translit": "walahu"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْجَوَارِ",
+          "norm": "الجوار",
+          "translit": "l-jawāri"
+        },
+        {
+          "i": 2,
+          "arabic": "ٱلْمُنشَـَٔاتُ",
+          "norm": "المنشات",
+          "translit": "l-munshaātu"
+        },
+        {
+          "i": 3,
+          "arabic": "فِى",
+          "norm": "في",
+          "translit": "fī"
+        },
+        {
+          "i": 4,
+          "arabic": "ٱلْبَحْرِ",
+          "norm": "البحر",
+          "translit": "l-baḥri"
+        },
+        {
+          "i": 5,
+          "arabic": "كَٱلْأَعْلَـٰمِ",
+          "norm": "كالاعلم",
+          "translit": "kal-aʿlāmi"
+        }
+      ],
+      "n": 24
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 25
+    },
+    {
+      "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍ",
+      "translit": "kullu man ʿalayhā fānin",
+      "english": "Everyone upon it [i.e., the earth] will perish,",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "كُلُّ",
+          "norm": "كل",
+          "translit": "kullu"
+        },
+        {
+          "i": 1,
+          "arabic": "مَنْ",
+          "norm": "من",
+          "translit": "man"
+        },
+        {
+          "i": 2,
+          "arabic": "عَلَيْهَا",
+          "norm": "عليها",
+          "translit": "ʿalayhā"
+        },
+        {
+          "i": 3,
+          "arabic": "فَانٍۢ",
+          "norm": "فان",
+          "translit": "fānin"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 26
+    },
+    {
+      "arabic": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو ٱلْجَلَـٰلِ وَٱلْإِكْرَامِ",
+      "translit": "wayabqā wajhu rabbika dhū l-jalāli wal-ik'rāmi",
+      "english": "And there will remain the Face of your Lord, Owner of Majesty and Honor.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَيَبْقَىٰ",
+          "norm": "ويبقي",
+          "translit": "wayabqā"
+        },
+        {
+          "i": 1,
+          "arabic": "وَجْهُ",
+          "norm": "وجه",
+          "translit": "wajhu"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكَ",
+          "norm": "ربك",
+          "translit": "rabbika"
+        },
+        {
+          "i": 3,
+          "arabic": "ذُو",
+          "norm": "ذو",
+          "translit": "dhū"
+        },
+        {
+          "i": 4,
+          "arabic": "ٱلْجَلَـٰلِ",
+          "norm": "الجلل",
+          "translit": "l-jalāli"
+        },
+        {
+          "i": 5,
+          "arabic": "وَٱلْإِكْرَامِ",
+          "norm": "والاكرام",
+          "translit": "wal-ik'rāmi"
+        }
+      ],
+      "n": 27
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 28
+    },
+    {
+      "arabic": "يَسْـَٔلُهُۥ مَن فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۚ كُلَّ يَوْمٍ هُوَ فِى شَأْنٍ",
+      "translit": "yasaluhu man fī l-samāwāti wal-arḍi kulla yawmin huwa fī shanin",
+      "english": "Whoever is within the heavens and earth asks Him; every day He is in [i.e., bringing about] a matter.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "يَسْـَٔلُهُۥ",
+          "norm": "يسلهۥ",
+          "translit": "yasaluhu"
+        },
+        {
+          "i": 1,
+          "arabic": "مَن",
+          "norm": "من",
+          "translit": "man"
+        },
+        {
+          "i": 2,
+          "arabic": "فِى",
+          "norm": "في",
+          "translit": "fī"
+        },
+        {
+          "i": 3,
+          "arabic": "ٱلسَّمَـٰوَٰتِ",
+          "norm": "السموت",
+          "translit": "l-samāwāti"
+        },
+        {
+          "i": 4,
+          "arabic": "وَٱلْأَرْضِ ۚ",
+          "norm": "والارض ",
+          "translit": "wal-arḍi"
+        },
+        {
+          "i": 5,
+          "arabic": "كُلَّ",
+          "norm": "كل",
+          "translit": "kulla"
+        },
+        {
+          "i": 6,
+          "arabic": "يَوْمٍ",
+          "norm": "يوم",
+          "translit": "yawmin"
+        },
+        {
+          "i": 7,
+          "arabic": "هُوَ",
+          "norm": "هو",
+          "translit": "huwa"
+        },
+        {
+          "i": 8,
+          "arabic": "فِى",
+          "norm": "في",
+          "translit": "fī"
+        },
+        {
+          "i": 9,
+          "arabic": "شَأْنٍۢ",
+          "norm": "شان",
+          "translit": "shanin"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 29
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 30
+    },
+    {
+      "arabic": "سَنَفْرُغُ لَكُمْ أَيُّهَ ٱلثَّقَلَانِ",
+      "translit": "sanafrughu lakum ayyuha l-thaqalāni",
+      "english": "We will attend to you, O prominent beings.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "سَنَفْرُغُ",
+          "norm": "سنفرغ",
+          "translit": "sanafrughu"
+        },
+        {
+          "i": 1,
+          "arabic": "لَكُمْ",
+          "norm": "لكم",
+          "translit": "lakum"
+        },
+        {
+          "i": 2,
+          "arabic": "أَيُّهَ",
+          "norm": "ايه",
+          "translit": "ayyuha"
+        },
+        {
+          "i": 3,
+          "arabic": "ٱلثَّقَلَانِ",
+          "norm": "الثقلان",
+          "translit": "l-thaqalāni"
+        }
+      ],
+      "n": 31
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 32
+    },
+    {
+      "arabic": "يَـٰمَعْشَرَ ٱلْجِنِّ وَٱلْإِنسِ إِنِ ٱسْتَطَعْتُمْ أَن تَنفُذُوا۟ مِنْ أَقْطَارِ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ فَٱنفُذُوا۟ ۚ لَا تَنفُذُونَ إِلَّا بِسُلْطَـٰنٍ",
+      "translit": "yāmaʿshara l-jini wal-insi ini is'taṭaʿtum an tanfudhū min aqṭāri l-samāwāti wal-arḍi fa-unfudhū lā tanfudhūna illā bisul'ṭānin",
+      "english": "O company of jinn and mankind, if you are able to pass beyond the regions of the heavens and the earth, then pass. You will not pass except by authority [from Allāh].",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "يَـٰمَعْشَرَ",
+          "norm": "يمعشر",
+          "translit": "yāmaʿshara"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْجِنِّ",
+          "norm": "الجن",
+          "translit": "l-jini"
+        },
+        {
+          "i": 2,
+          "arabic": "وَٱلْإِنسِ",
+          "norm": "والانس",
+          "translit": "wal-insi"
+        },
+        {
+          "i": 3,
+          "arabic": "إِنِ",
+          "norm": "ان",
+          "translit": "ini"
+        },
+        {
+          "i": 4,
+          "arabic": "ٱسْتَطَعْتُمْ",
+          "norm": "استطعتم",
+          "translit": "is'taṭaʿtum"
+        },
+        {
+          "i": 5,
+          "arabic": "أَن",
+          "norm": "ان",
+          "translit": "an"
+        },
+        {
+          "i": 6,
+          "arabic": "تَنفُذُوا۟",
+          "norm": "تنفذوا",
+          "translit": "tanfudhū"
+        },
+        {
+          "i": 7,
+          "arabic": "مِنْ",
+          "norm": "من",
+          "translit": "min"
+        },
+        {
+          "i": 8,
+          "arabic": "أَقْطَارِ",
+          "norm": "اقطار",
+          "translit": "aqṭāri"
+        },
+        {
+          "i": 9,
+          "arabic": "ٱلسَّمَـٰوَٰتِ",
+          "norm": "السموت",
+          "translit": "l-samāwāti"
+        },
+        {
+          "i": 10,
+          "arabic": "وَٱلْأَرْضِ",
+          "norm": "والارض",
+          "translit": "wal-arḍi"
+        },
+        {
+          "i": 11,
+          "arabic": "فَٱنفُذُوا۟ ۚ",
+          "norm": "فانفذوا ",
+          "translit": "fa-unfudhū"
+        },
+        {
+          "i": 12,
+          "arabic": "لَا",
+          "norm": "لا",
+          "translit": "lā"
+        },
+        {
+          "i": 13,
+          "arabic": "تَنفُذُونَ",
+          "norm": "تنفذون",
+          "translit": "tanfudhūna"
+        },
+        {
+          "i": 14,
+          "arabic": "إِلَّا",
+          "norm": "الا",
+          "translit": "illā"
+        },
+        {
+          "i": 15,
+          "arabic": "بِسُلْطَـٰنٍۢ",
+          "norm": "بسلطن",
+          "translit": "bisul'ṭānin"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 33
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 34
+    },
+    {
+      "arabic": "يُرْسَلُ عَلَيْكُمَا شُوَاظٌ مِّن نَّارٍ وَنُحَاسٌ فَلَا تَنتَصِرَانِ",
+      "translit": "yur'salu ʿalaykumā shuwāẓun min nārin wanuḥāsun falā tantaṣirāni",
+      "english": "There will be sent upon you a flame of fire and smoke, and you will not defend yourselves.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "يُرْسَلُ",
+          "norm": "يرسل",
+          "translit": "yur'salu"
+        },
+        {
+          "i": 1,
+          "arabic": "عَلَيْكُمَا",
+          "norm": "عليكما",
+          "translit": "ʿalaykumā"
+        },
+        {
+          "i": 2,
+          "arabic": "شُوَاظٌۭ",
+          "norm": "شواظ",
+          "translit": "shuwāẓun"
+        },
+        {
+          "i": 3,
+          "arabic": "مِّن",
+          "norm": "من",
+          "translit": "min"
+        },
+        {
+          "i": 4,
+          "arabic": "نَّارٍۢ",
+          "norm": "نار",
+          "translit": "nārin"
+        },
+        {
+          "i": 5,
+          "arabic": "وَنُحَاسٌۭ",
+          "norm": "ونحاس",
+          "translit": "wanuḥāsun"
+        },
+        {
+          "i": 6,
+          "arabic": "فَلَا",
+          "norm": "فلا",
+          "translit": "falā"
+        },
+        {
+          "i": 7,
+          "arabic": "تَنتَصِرَانِ",
+          "norm": "تنتصران",
+          "translit": "tantaṣirāni"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 35
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 36
+    },
+    {
+      "arabic": "فَإِذَا ٱنشَقَّتِ ٱلسَّمَآءُ فَكَانَتْ وَرْدَةً كَٱلدِّهَانِ",
+      "translit": "fa-idhā inshaqqati l-samāu fakānat wardatan kal-dihāni",
+      "english": "And when the heaven is split open and becomes rose-colored like oil -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَإِذَا",
+          "norm": "فاذا",
+          "translit": "fa-idhā"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱنشَقَّتِ",
+          "norm": "انشقت",
+          "translit": "inshaqqati"
+        },
+        {
+          "i": 2,
+          "arabic": "ٱلسَّمَآءُ",
+          "norm": "السماء",
+          "translit": "l-samāu"
+        },
+        {
+          "i": 3,
+          "arabic": "فَكَانَتْ",
+          "norm": "فكانت",
+          "translit": "fakānat"
+        },
+        {
+          "i": 4,
+          "arabic": "وَرْدَةًۭ",
+          "norm": "ورده",
+          "translit": "wardatan"
+        },
+        {
+          "i": 5,
+          "arabic": "كَٱلدِّهَانِ",
+          "norm": "كالدهان",
+          "translit": "kal-dihāni"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 37
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny? -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 38
+    },
+    {
+      "arabic": "فَيَوْمَئِذٍ لَّا يُسْـَٔلُ عَن ذَنۢبِهِۦٓ إِنسٌ وَلَا جَآنٌّ",
+      "translit": "fayawma-idhin lā yus'alu ʿan dhanbihi insun walā jānnun",
+      "english": "Then on that Day none will be asked about his sin among men or jinn.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَيَوْمَئِذٍۢ",
+          "norm": "فيومئذ",
+          "translit": "fayawma-idhin"
+        },
+        {
+          "i": 1,
+          "arabic": "لَّا",
+          "norm": "لا",
+          "translit": "lā"
+        },
+        {
+          "i": 2,
+          "arabic": "يُسْـَٔلُ",
+          "norm": "يسل",
+          "translit": "yus'alu"
+        },
+        {
+          "i": 3,
+          "arabic": "عَن",
+          "norm": "عن",
+          "translit": "ʿan"
+        },
+        {
+          "i": 4,
+          "arabic": "ذَنۢبِهِۦٓ",
+          "norm": "ذنبهۦ",
+          "translit": "dhanbihi"
+        },
+        {
+          "i": 5,
+          "arabic": "إِنسٌۭ",
+          "norm": "انس",
+          "translit": "insun"
+        },
+        {
+          "i": 6,
+          "arabic": "وَلَا",
+          "norm": "ولا",
+          "translit": "walā"
+        },
+        {
+          "i": 7,
+          "arabic": "جَآنٌّۭ",
+          "norm": "جان",
+          "translit": "jānnun"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 39
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 40
+    },
+    {
+      "arabic": "يُعْرَفُ ٱلْمُجْرِمُونَ بِسِيمَـٰهُمْ فَيُؤْخَذُ بِٱلنَّوَٰصِى وَٱلْأَقْدَامِ",
+      "translit": "yuʿ'rafu l-muj'rimūna bisīmāhum fayu'khadhu bil-nawāṣī wal-aqdāmi",
+      "english": "The criminals will be known by their marks, and they will be seized by the forelocks and the feet.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "يُعْرَفُ",
+          "norm": "يعرف",
+          "translit": "yuʿ'rafu"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْمُجْرِمُونَ",
+          "norm": "المجرمون",
+          "translit": "l-muj'rimūna"
+        },
+        {
+          "i": 2,
+          "arabic": "بِسِيمَـٰهُمْ",
+          "norm": "بسيمهم",
+          "translit": "bisīmāhum"
+        },
+        {
+          "i": 3,
+          "arabic": "فَيُؤْخَذُ",
+          "norm": "فيؤخذ",
+          "translit": "fayu'khadhu"
+        },
+        {
+          "i": 4,
+          "arabic": "بِٱلنَّوَٰصِى",
+          "norm": "بالنوصي",
+          "translit": "bil-nawāṣī"
+        },
+        {
+          "i": 5,
+          "arabic": "وَٱلْأَقْدَامِ",
+          "norm": "والاقدام",
+          "translit": "wal-aqdāmi"
+        }
+      ],
+      "n": 41
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 42
+    },
+    {
+      "arabic": "هَـٰذِهِۦ جَهَنَّمُ ٱلَّتِى يُكَذِّبُ بِهَا ٱلْمُجْرِمُونَ",
+      "translit": "hādhihi jahannamu allatī yukadhibu bihā l-muj'rimūna",
+      "english": "This is Hell, which the criminals deny.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "هَـٰذِهِۦ",
+          "norm": "هذهۦ",
+          "translit": "hādhihi"
+        },
+        {
+          "i": 1,
+          "arabic": "جَهَنَّمُ",
+          "norm": "جهنم",
+          "translit": "jahannamu"
+        },
+        {
+          "i": 2,
+          "arabic": "ٱلَّتِى",
+          "norm": "التي",
+          "translit": "allatī"
+        },
+        {
+          "i": 3,
+          "arabic": "يُكَذِّبُ",
+          "norm": "يكذب",
+          "translit": "yukadhibu"
+        },
+        {
+          "i": 4,
+          "arabic": "بِهَا",
+          "norm": "بها",
+          "translit": "bihā"
+        },
+        {
+          "i": 5,
+          "arabic": "ٱلْمُجْرِمُونَ",
+          "norm": "المجرمون",
+          "translit": "l-muj'rimūna"
+        }
+      ],
+      "n": 43
+    },
+    {
+      "arabic": "يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍ",
+      "translit": "yaṭūfūna baynahā wabayna ḥamīmin ānin",
+      "english": "They will circulate between it and scalding water, heated [to the utmost degree].",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "يَطُوفُونَ",
+          "norm": "يطوفون",
+          "translit": "yaṭūfūna"
+        },
+        {
+          "i": 1,
+          "arabic": "بَيْنَهَا",
+          "norm": "بينها",
+          "translit": "baynahā"
+        },
+        {
+          "i": 2,
+          "arabic": "وَبَيْنَ",
+          "norm": "وبين",
+          "translit": "wabayna"
+        },
+        {
+          "i": 3,
+          "arabic": "حَمِيمٍ",
+          "norm": "حميم",
+          "translit": "ḥamīmin"
+        },
+        {
+          "i": 4,
+          "arabic": "ءَانٍۢ",
+          "norm": "ءان",
+          "translit": "ānin"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 44
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 45
+    },
+    {
+      "arabic": "وَلِمَنْ خَافَ مَقَامَ رَبِّهِۦ جَنَّتَانِ",
+      "translit": "waliman khāfa maqāma rabbihi jannatāni",
+      "english": "But for he who has feared the position of his Lord are two gardens -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَلِمَنْ",
+          "norm": "ولمن",
+          "translit": "waliman"
+        },
+        {
+          "i": 1,
+          "arabic": "خَافَ",
+          "norm": "خاف",
+          "translit": "khāfa"
+        },
+        {
+          "i": 2,
+          "arabic": "مَقَامَ",
+          "norm": "مقام",
+          "translit": "maqāma"
+        },
+        {
+          "i": 3,
+          "arabic": "رَبِّهِۦ",
+          "norm": "ربهۦ",
+          "translit": "rabbihi"
+        },
+        {
+          "i": 4,
+          "arabic": "جَنَّتَانِ",
+          "norm": "جنتان",
+          "translit": "jannatāni"
+        }
+      ],
+      "n": 46
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny? -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 47
+    },
+    {
+      "arabic": "ذَوَاتَآ أَفْنَانٍ",
+      "translit": "dhawātā afnānin",
+      "english": "Having [spreading] branches.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "ذَوَاتَآ",
+          "norm": "ذواتا",
+          "translit": "dhawātā"
+        },
+        {
+          "i": 1,
+          "arabic": "أَفْنَانٍۢ",
+          "norm": "افنان",
+          "translit": "afnānin"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 48
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 49
+    },
+    {
+      "arabic": "فِيهِمَا عَيْنَانِ تَجْرِيَانِ",
+      "translit": "fīhimā ʿaynāni tajriyāni",
+      "english": "In both of them are two springs, flowing.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فِيهِمَا",
+          "norm": "فيهما",
+          "translit": "fīhimā"
+        },
+        {
+          "i": 1,
+          "arabic": "عَيْنَانِ",
+          "norm": "عينان",
+          "translit": "ʿaynāni"
+        },
+        {
+          "i": 2,
+          "arabic": "تَجْرِيَانِ",
+          "norm": "تجريان",
+          "translit": "tajriyāni"
+        }
+      ],
+      "n": 50
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 51
+    },
+    {
+      "arabic": "فِيهِمَا مِن كُلِّ فَـٰكِهَةٍ زَوْجَانِ",
+      "translit": "fīhimā min kulli fākihatin zawjāni",
+      "english": "In both of them are of every fruit, two kinds.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فِيهِمَا",
+          "norm": "فيهما",
+          "translit": "fīhimā"
+        },
+        {
+          "i": 1,
+          "arabic": "مِن",
+          "norm": "من",
+          "translit": "min"
+        },
+        {
+          "i": 2,
+          "arabic": "كُلِّ",
+          "norm": "كل",
+          "translit": "kulli"
+        },
+        {
+          "i": 3,
+          "arabic": "فَـٰكِهَةٍۢ",
+          "norm": "فكهه",
+          "translit": "fākihatin"
+        },
+        {
+          "i": 4,
+          "arabic": "زَوْجَانِ",
+          "norm": "زوجان",
+          "translit": "zawjāni"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 52
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 53
+    },
+    {
+      "arabic": "مُتَّكِـِٔينَ عَلَىٰ فُرُشٍۭ بَطَآئِنُهَا مِنْ إِسْتَبْرَقٍ ۚ وَجَنَى ٱلْجَنَّتَيْنِ دَانٍ",
+      "translit": "muttakiīna ʿalā furushin baṭāinuhā min is'tabraqin wajanā l-janatayni dānin",
+      "english": "[They are] reclining on beds whose linings are of silk brocade, and the fruit of the two gardens is hanging low.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "مُتَّكِـِٔينَ",
+          "norm": "متكين",
+          "translit": "muttakiīna"
+        },
+        {
+          "i": 1,
+          "arabic": "عَلَىٰ",
+          "norm": "علي",
+          "translit": "ʿalā"
+        },
+        {
+          "i": 2,
+          "arabic": "فُرُشٍۭ",
+          "norm": "فرش",
+          "translit": "furushin"
+        },
+        {
+          "i": 3,
+          "arabic": "بَطَآئِنُهَا",
+          "norm": "بطائنها",
+          "translit": "baṭāinuhā"
+        },
+        {
+          "i": 4,
+          "arabic": "مِنْ",
+          "norm": "من",
+          "translit": "min"
+        },
+        {
+          "i": 5,
+          "arabic": "إِسْتَبْرَقٍۢ ۚ",
+          "norm": "استبرق ",
+          "translit": "is'tabraqin"
+        },
+        {
+          "i": 6,
+          "arabic": "وَجَنَى",
+          "norm": "وجني",
+          "translit": "wajanā"
+        },
+        {
+          "i": 7,
+          "arabic": "ٱلْجَنَّتَيْنِ",
+          "norm": "الجنتين",
+          "translit": "l-janatayni"
+        },
+        {
+          "i": 8,
+          "arabic": "دَانٍۢ",
+          "norm": "دان",
+          "translit": "dānin"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 54
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 55
+    },
+    {
+      "arabic": "فِيهِنَّ قَـٰصِرَٰتُ ٱلطَّرْفِ لَمْ يَطْمِثْهُنَّ إِنسٌ قَبْلَهُمْ وَلَا جَآنٌّ",
+      "translit": "fīhinna qāṣirātu l-ṭarfi lam yaṭmith'hunna insun qablahum walā jānnun",
+      "english": "In them are women limiting [their] glances, untouched before them by man or jinnī -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فِيهِنَّ",
+          "norm": "فيهن",
+          "translit": "fīhinna"
+        },
+        {
+          "i": 1,
+          "arabic": "قَـٰصِرَٰتُ",
+          "norm": "قصرت",
+          "translit": "qāṣirātu"
+        },
+        {
+          "i": 2,
+          "arabic": "ٱلطَّرْفِ",
+          "norm": "الطرف",
+          "translit": "l-ṭarfi"
+        },
+        {
+          "i": 3,
+          "arabic": "لَمْ",
+          "norm": "لم",
+          "translit": "lam"
+        },
+        {
+          "i": 4,
+          "arabic": "يَطْمِثْهُنَّ",
+          "norm": "يطمثهن",
+          "translit": "yaṭmith'hunna"
+        },
+        {
+          "i": 5,
+          "arabic": "إِنسٌۭ",
+          "norm": "انس",
+          "translit": "insun"
+        },
+        {
+          "i": 6,
+          "arabic": "قَبْلَهُمْ",
+          "norm": "قبلهم",
+          "translit": "qablahum"
+        },
+        {
+          "i": 7,
+          "arabic": "وَلَا",
+          "norm": "ولا",
+          "translit": "walā"
+        },
+        {
+          "i": 8,
+          "arabic": "جَآنٌّۭ",
+          "norm": "جان",
+          "translit": "jānnun"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 56
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny? -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 57
+    },
+    {
+      "arabic": "كَأَنَّهُنَّ ٱلْيَاقُوتُ وَٱلْمَرْجَانُ",
+      "translit": "ka-annahunna l-yāqūtu wal-marjānu",
+      "english": "As if they were rubies and coral.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "كَأَنَّهُنَّ",
+          "norm": "كانهن",
+          "translit": "ka-annahunna"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱلْيَاقُوتُ",
+          "norm": "الياقوت",
+          "translit": "l-yāqūtu"
+        },
+        {
+          "i": 2,
+          "arabic": "وَٱلْمَرْجَانُ",
+          "norm": "والمرجان",
+          "translit": "wal-marjānu"
+        }
+      ],
+      "n": 58
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 59
+    },
+    {
+      "arabic": "هَلْ جَزَآءُ ٱلْإِحْسَـٰنِ إِلَّا ٱلْإِحْسَـٰنُ",
+      "translit": "hal jazāu l-iḥ'sāni illā l-iḥ'sānu",
+      "english": "Is the reward for good [anything] but good?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "هَلْ",
+          "norm": "هل",
+          "translit": "hal"
+        },
+        {
+          "i": 1,
+          "arabic": "جَزَآءُ",
+          "norm": "جزاء",
+          "translit": "jazāu"
+        },
+        {
+          "i": 2,
+          "arabic": "ٱلْإِحْسَـٰنِ",
+          "norm": "الاحسن",
+          "translit": "l-iḥ'sāni"
+        },
+        {
+          "i": 3,
+          "arabic": "إِلَّا",
+          "norm": "الا",
+          "translit": "illā"
+        },
+        {
+          "i": 4,
+          "arabic": "ٱلْإِحْسَـٰنُ",
+          "norm": "الاحسن",
+          "translit": "l-iḥ'sānu"
+        }
+      ],
+      "n": 60
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 61
+    },
+    {
+      "arabic": "وَمِن دُونِهِمَا جَنَّتَانِ",
+      "translit": "wamin dūnihimā jannatāni",
+      "english": "And below them both [in excellence] are two [other] gardens -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "وَمِن",
+          "norm": "ومن",
+          "translit": "wamin"
+        },
+        {
+          "i": 1,
+          "arabic": "دُونِهِمَا",
+          "norm": "دونهما",
+          "translit": "dūnihimā"
+        },
+        {
+          "i": 2,
+          "arabic": "جَنَّتَانِ",
+          "norm": "جنتان",
+          "translit": "jannatāni"
+        }
+      ],
+      "n": 62
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny? -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 63
+    },
+    {
+      "arabic": "مُدْهَآمَّتَانِ",
+      "translit": "mud'hāmmatāni",
+      "english": "Dark green [in color].",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "مُدْهَآمَّتَانِ",
+          "norm": "مدهامتان",
+          "translit": "mud'hāmmatāni"
+        }
+      ],
+      "n": 64
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 65
+    },
+    {
+      "arabic": "فِيهِمَا عَيْنَانِ نَضَّاخَتَانِ",
+      "translit": "fīhimā ʿaynāni naḍḍākhatāni",
+      "english": "In both of them are two springs, spouting.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فِيهِمَا",
+          "norm": "فيهما",
+          "translit": "fīhimā"
+        },
+        {
+          "i": 1,
+          "arabic": "عَيْنَانِ",
+          "norm": "عينان",
+          "translit": "ʿaynāni"
+        },
+        {
+          "i": 2,
+          "arabic": "نَضَّاخَتَانِ",
+          "norm": "نضاختان",
+          "translit": "naḍḍākhatāni"
+        }
+      ],
+      "n": 66
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 67
+    },
+    {
+      "arabic": "فِيهِمَا فَـٰكِهَةٌ وَنَخْلٌ وَرُمَّانٌ",
+      "translit": "fīhimā fākihatun wanakhlun warummānun",
+      "english": "In both of them are fruit and palm trees and pomegranates.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فِيهِمَا",
+          "norm": "فيهما",
+          "translit": "fīhimā"
+        },
+        {
+          "i": 1,
+          "arabic": "فَـٰكِهَةٌۭ",
+          "norm": "فكهه",
+          "translit": "fākihatun"
+        },
+        {
+          "i": 2,
+          "arabic": "وَنَخْلٌۭ",
+          "norm": "ونخل",
+          "translit": "wanakhlun"
+        },
+        {
+          "i": 3,
+          "arabic": "وَرُمَّانٌۭ",
+          "norm": "ورمان",
+          "translit": "warummānun"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 68
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 69
+    },
+    {
+      "arabic": "فِيهِنَّ خَيْرَٰتٌ حِسَانٌ",
+      "translit": "fīhinna khayrātun ḥisānun",
+      "english": "In them are good and beautiful women -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فِيهِنَّ",
+          "norm": "فيهن",
+          "translit": "fīhinna"
+        },
+        {
+          "i": 1,
+          "arabic": "خَيْرَٰتٌ",
+          "norm": "خيرت",
+          "translit": "khayrātun"
+        },
+        {
+          "i": 2,
+          "arabic": "حِسَانٌۭ",
+          "norm": "حسان",
+          "translit": "ḥisānun"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 70
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny? -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 71
+    },
+    {
+      "arabic": "حُورٌ مَّقْصُورَٰتٌ فِى ٱلْخِيَامِ",
+      "translit": "ḥūrun maqṣūrātun fī l-khiyāmi",
+      "english": "Fair ones reserved in pavilions -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "حُورٌۭ",
+          "norm": "حور",
+          "translit": "ḥūrun"
+        },
+        {
+          "i": 1,
+          "arabic": "مَّقْصُورَٰتٌۭ",
+          "norm": "مقصورت",
+          "translit": "maqṣūrātun"
+        },
+        {
+          "i": 2,
+          "arabic": "فِى",
+          "norm": "في",
+          "translit": "fī"
+        },
+        {
+          "i": 3,
+          "arabic": "ٱلْخِيَامِ",
+          "norm": "الخيام",
+          "translit": "l-khiyāmi"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 72
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny? -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 73
+    },
+    {
+      "arabic": "لَمْ يَطْمِثْهُنَّ إِنسٌ قَبْلَهُمْ وَلَا جَآنٌّ",
+      "translit": "lam yaṭmith'hunna insun qablahum walā jānnun",
+      "english": "Untouched before them by man or jinnī -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "لَمْ",
+          "norm": "لم",
+          "translit": "lam"
+        },
+        {
+          "i": 1,
+          "arabic": "يَطْمِثْهُنَّ",
+          "norm": "يطمثهن",
+          "translit": "yaṭmith'hunna"
+        },
+        {
+          "i": 2,
+          "arabic": "إِنسٌۭ",
+          "norm": "انس",
+          "translit": "insun"
+        },
+        {
+          "i": 3,
+          "arabic": "قَبْلَهُمْ",
+          "norm": "قبلهم",
+          "translit": "qablahum"
+        },
+        {
+          "i": 4,
+          "arabic": "وَلَا",
+          "norm": "ولا",
+          "translit": "walā"
+        },
+        {
+          "i": 5,
+          "arabic": "جَآنٌّۭ",
+          "norm": "جان",
+          "translit": "jānnun"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 74
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny? -",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 75
+    },
+    {
+      "arabic": "مُتَّكِـِٔينَ عَلَىٰ رَفْرَفٍ خُضْرٍ وَعَبْقَرِىٍّ حِسَانٍ",
+      "translit": "muttakiīna ʿalā rafrafin khuḍ'rin waʿabqariyyin ḥisānin",
+      "english": "Reclining on green cushions and beautiful fine carpets.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "مُتَّكِـِٔينَ",
+          "norm": "متكين",
+          "translit": "muttakiīna"
+        },
+        {
+          "i": 1,
+          "arabic": "عَلَىٰ",
+          "norm": "علي",
+          "translit": "ʿalā"
+        },
+        {
+          "i": 2,
+          "arabic": "رَفْرَفٍ",
+          "norm": "رفرف",
+          "translit": "rafrafin"
+        },
+        {
+          "i": 3,
+          "arabic": "خُضْرٍۢ",
+          "norm": "خضر",
+          "translit": "khuḍ'rin"
+        },
+        {
+          "i": 4,
+          "arabic": "وَعَبْقَرِىٍّ",
+          "norm": "وعبقري",
+          "translit": "waʿabqariyyin"
+        },
+        {
+          "i": 5,
+          "arabic": "حِسَانٍۢ",
+          "norm": "حسان",
+          "translit": "ḥisānin"
+        }
+      ],
+      "word_integrity_warning": "API word marks differ from verse text",
+      "n": 76
+    },
+    {
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translit": "fabi-ayyi ālāi rabbikumā tukadhibāni",
+      "english": "So which of the favors of your Lord would you deny?",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "فَبِأَىِّ",
+          "norm": "فباي",
+          "translit": "fabi-ayyi"
+        },
+        {
+          "i": 1,
+          "arabic": "ءَالَآءِ",
+          "norm": "ءالاء",
+          "translit": "ālāi"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكُمَا",
+          "norm": "ربكما",
+          "translit": "rabbikumā"
+        },
+        {
+          "i": 3,
+          "arabic": "تُكَذِّبَانِ",
+          "norm": "تكذبان",
+          "translit": "tukadhibāni"
+        }
+      ],
+      "n": 77
+    },
+    {
+      "arabic": "تَبَـٰرَكَ ٱسْمُ رَبِّكَ ذِى ٱلْجَلَـٰلِ وَٱلْإِكْرَامِ",
+      "translit": "tabāraka us'mu rabbika dhī l-jalāli wal-ik'rāmi",
+      "english": "Blessed is the name of your Lord, Owner of Majesty and Honor.",
+      "words": [
+        {
+          "i": 0,
+          "arabic": "تَبَـٰرَكَ",
+          "norm": "تبرك",
+          "translit": "tabāraka"
+        },
+        {
+          "i": 1,
+          "arabic": "ٱسْمُ",
+          "norm": "اسم",
+          "translit": "us'mu"
+        },
+        {
+          "i": 2,
+          "arabic": "رَبِّكَ",
+          "norm": "ربك",
+          "translit": "rabbika"
+        },
+        {
+          "i": 3,
+          "arabic": "ذِى",
+          "norm": "ذي",
+          "translit": "dhī"
+        },
+        {
+          "i": 4,
+          "arabic": "ٱلْجَلَـٰلِ",
+          "norm": "الجلل",
+          "translit": "l-jalāli"
+        },
+        {
+          "i": 5,
+          "arabic": "وَٱلْإِكْرَامِ",
+          "norm": "والاكرام",
+          "translit": "wal-ik'rāmi"
+        }
+      ],
+      "n": 78
+    }
+  ]
+}

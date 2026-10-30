@@ -1,0 +1,237 @@
+# ROLE: SPECIALIST
+
+You are one of three roles building a Quran-recitation video tool: BUILDER (Copilot in VS Code, writes everything else), SPECIALIST (you), AUDITOR (reviews finished work). Below this prompt the user pasted SPEC.md (requirements and data formats) and STATE.md (the plan, what is done, and your current handoff). Read STATE.md first, then do the task under "Current handoff".
+
+## Your job
+Write ONLY the files named in the handoff: scripts/match.py and tests/test_match.py (Step 5), or scripts/align.py and tests/test_align.py (Step 6). Follow SPEC section 11 exactly for inputs, outputs, signatures and config keys. Do not touch other files or formats and do not add anything unasked. If something else must change, list it under "Requests to other roles".
+
+## What you can and cannot do
+- You may be able to run code in a sandbox with Python and pip (PyPI only). If so: write the files, install what you need (rapidfuzz, pytest), run the tests against the attached fixtures, fix failures, and report real output. Never claim tests passed unless you ran them and saw them pass. If you cannot run code, trace the tests by hand and say so.
+- No GPU and no Hugging Face downloads in the sandbox. For align.py, test the logic (snapping, trimming, flags, word-time bookkeeping, contract shapes) with a fake aligner returning synthetic word times. Keep the real ctc-forced-aligner call in ONE isolated function marked TODO-VERIFY for BUILDER to check against the installed package. Verify the package's real API from its docs or source if you can; do not guess silently.
+- You cannot see the user's repo, only the files attached to this chat. If you need one that is missing, ask. Never invent file contents or signatures.
+
+## Rules (from SPEC.md)
+- Never type or recall Quran text. Tests build input from the attached fixtures (text.json files produced by fetch_text.py) and from synthetic recognized-word streams derived from them (their own norm words plus simulated errors). If a fixture is missing, ask.
+- Matching is word-level against the window F+1 and F-3..F anchored at the furthest ayah reached, carried across takes; the Bismillah is an extra candidate only at the start of a surah. No forward skips. No fuzz.partial_ratio as the decision-maker. Anything outside the window is flagged, never guessed.
+- Import normalize_arabic from scripts/normalize.py; never redefine it.
+- match.py is pure Python plus rapidfuzz: no torch, no audio. Thresholds come only from cfg.
+
+## Match: cases your tests must cover
+Normal advance; repeat of the last ayah; repeat from 4 back; restart mid-ayah (partial dropped, complete kept); a jump back of 5 (flagged); an unmatched segment (flagged); a second take that starts by repeating 3 ayahs back from where take 1 ended; a repeat in take 2 replacing an ayah from take 1; Bismillah present and absent (and Surah 1 and Surah 9 rules); a take ending mid-ayah; ayahs with shared endings that must not be confused; recognizer errors (substituted, dropped, inserted words); a segment spanning two ayahs with no pause.
+Suggested approach (not mandatory): dynamic-programming alignment of the recognized word stream against the candidate ayah word sequences using fuzzy similarity on normalized words, with a penalty for jumps, deciding ayah boundaries from where the known text ends.
+
+## Align: cases your tests must cover
+Snapping cut points to silence within silence_snap_max_s; trimming trailing silence on the last word; low-confidence and abnormal-duration flags; word times inside [cut_start, cut_end]; word times keyed by Word.i; align on normalized text but never alter display text; empty or odd input handled without crashing.
+
+## Answer format (in this order)
+1. CONTRACT QUESTIONS: only blocking ones. If any, stop here and ask.
+2. ASSUMPTIONS: short list.
+3. FILES: each file delivered as a downloadable file, and its complete content shown if you cannot attach files. Complete files only, never "rest unchanged". Use the exact paths from the handoff.
+4. HOW TO RUN THE TESTS: exact commands for the user's machine.
+5. TEST REPORT: the commands you ran and their real output, or "could not run, traced by hand". Remaining risks.
+6. REQUESTS TO OTHER ROLES: only if needed.
+7. STATE UPDATE (the user pastes this to BUILDER): at most 8 lines: what was written, decisions made, what BUILDER must know.# SPEC: single source of truth. Changes only with the user's approval, logged in STATE.md.
+
+## 1. PROJECT
+The user records their own Quran recitations (Hafs 'an 'Asim). The tool turns the recordings of ONE surah into ONE finished MP4 for a viewer who does not understand Arabic. The video shows Arabic (Uthmani, full marks), English transliteration and English translation, changing in sync with the recitation, over a still background image with three framed strips, plus surah title and reciter name. The template is styled once and reused for about 30 surahs. Success: one command per surah, the user only looks at flagged spots.
+
+## 2. HOW THE USER RECITES (defines the hard part)
+- Continuous recitation, NO forced pause between ayahs.
+- Within a take and across takes the user may stop, restart an ayah, or repeat ayahs. A new take may begin by repeating up to 4 ayahs back from where the previous take ended.
+- The user NEVER skips ahead. The only backward movement is repetition, never more than 4 ayahs back from the furthest ayah reached.
+
+## 3. CLI
+    python scripts/run_pipeline.py --surah N --audio t1.m4a [t2.m4a ...] [--start-ayah 1] [--stage STAGE] [--force STAGE] [--config PATH]
+- Audio files are given IN ORDER, one file per take. One run = one surah = one video. Later takes need no start ayah (the tracker carries over).
+- Stages in order: fetch, recognize, match, align, review, render. --stage runs only that stage (earlier outputs must exist). --force redoes that stage and everything after it.
+- Caching: every stage skips itself when its output exists and its inputs and the config sections it uses are unchanged (hashes in work/<surah>/manifest.json). Recognition is cached per take and per audio file hash.
+- Review gate: after the review stage, if review.json contains any flag with severity warn or error that is not accepted in overrides.json, the run stops with exit code 2 and prints the path to review.html. Running again with --stage render renders regardless.
+- Console: one line per stage (name, seconds, short result), final summary (ayahs kept, dropped, flagged, output path). Full detail goes to logs/<surah>.log. Errors say what is wrong and how to fix it, never a bare traceback.
+- Exit codes: 0 done, 1 error, 2 stopped for review.
+- Config is validated at startup (all keys present, files exist, values sane) with clear messages.
+- Output: output/<surah 3 digits>_<slug>.mp4.
+- scripts/review.py also works as its own command to record decisions:
+    python scripts/review.py --surah N --drop SPAN_ID | --shift SPAN_ID START_DELTA END_DELTA | --accept TYPE AYAH
+  Each writes work/<surah>/overrides.json (see section 8). A rerun applies it.
+
+## 4. RECOGNITION LOGIC (required; do not substitute something simpler)
+1. Keep F = the FURTHEST ayah reached so far (not the current position). Anchor the window to F so repeated going-back can never drag it backward. F persists across takes.
+2. Candidates at any moment: ayah F+1 and ayahs F-3 through F. Nothing else. No forward-skip candidates. At the start of a surah the Bismillah segment is an extra candidate (section 6).
+3. Do NOT treat one Whisper segment as one ayah: with no forced pauses a segment can span two ayahs or end mid-ayah. Match at WORD level: align the recognized word sequence against the expected word sequence of the candidate ayahs, so ayah boundaries come from the known text.
+4. Handle: normal advance; full repeat (keep the last complete take by default; config option to keep the highest-confidence one); partial ayah or abandoned restart (drop it from the audio); anything matching nothing inside the window (do NOT guess: flag it). A repeat in a later take replaces that ayah from an earlier take under the same rule.
+5. Do NOT use fuzz.partial_ratio as the decision-maker: it scores a short fragment inside a long ayah as a near-perfect match, dangerous with shared phrases and rhyming endings. Normalized Arabic plus rapidfuzz may be a cheap pre-filter only.
+6. After spans are decided, run a CTC forced aligner on each accepted span with the EXACT known text, so word counts never mismatch. Snap ayah start/end to real silence and trim trailing silence on the last word of each ayah.
+7. Final audio = accepted spans cut from the takes (repeats and partials removed), joined in ayah order. Timings are generated against that edited audio. Record which take and time range every span came from.
+8. Quality gate: review.json flags low match confidence, out-of-window matches, unmatched segments, partial ayahs, missing ayahs (no take covered it), Bismillah problems, low alignment confidence, abnormal ayah durations, text overflow, English overflow, and unit boundaries with low word confidence. Every flag names its take and timestamp. review.html plays ONLY the flagged spots.
+
+## 5. QURAN TEXT RULES (absolute)
+- All Arabic, transliteration and translation come from the Quran.com API v4 (api.quran.com). NEVER type or recall Quran text anywhere, including tests and examples. Test data is text fetched by fetch_text.py and cached in tests/fixtures/ (fetch surahs 93, 112, 114 and 55).
+- ASR output is evidence for timing and matching only and is never displayed.
+- Display the Arabic exactly as the API returns it. Normalized text is for matching and alignment only.
+- Resource IDs (Uthmani text, transliteration, English translation) are verified against the live API (translations list endpoint) before use, never trusted from memory. Default English: Sahih International; confirm its ID.
+- Riwaya: Hafs for both recitation and text. config riwaya: "hafs". No other riwayat.
+
+## 6. BISMILLAH
+- The user recites it at the start of each surah except Surah 9. Config bismillah: true/false (default true); Surah 9 never has one.
+- Surah 1: it is verse 1:1, a normal ayah. Every other surah: an opening segment before ayah 1, text fetched from the API (verse 1:1), shown on its own screen (never grouped with ayah 1), handled outside the ayah window logic. The tracker starts at ayah 1 after it.
+- Flag it if expected but not recited, or recited but not expected.
+
+## 7. SCREEN LOGIC
+- The screen shows one SCREEN UNIT at a time: (a) a GROUP of 1 or more consecutive WHOLE ayahs, or (b) a CHUNK: one piece of a single ayah too long for its strip. A unit never mixes a partial ayah with other ayahs.
+- Grouping: in ayah order, greedily add the next ayah to the current group while ALL THREE layers still fit their strips at or above a "group min font size" (readability floor above the absolute minimum) and the group has at most max_ayahs_per_screen ayahs (default 2). Otherwise start a new group. Never group across the Bismillah.
+- Splitting: if a single ayah does not fit its strip at the minimum font size (Arabic or transliteration), split it into chunks shown one after another, only at word boundaries, at the SAME words in Arabic and transliteration. Prefer the Quran's pause signs (waqf marks) when present; otherwise balance lengths (no tiny last chunk). Fewest chunks that fit.
+- Switching: a unit appears when the user starts the first word of its first ayah or chunk, minus a lead time (default 0.1 s), and stays until the next unit appears. Pauses do not blank the screen.
+- English is always ayah-level. For a group, show each ayah's full API translation in order, clearly separated (for example by the ayah number in brackets). For a chunk, show the FULL English of its ayah, unchanged across its chunks. Never split, cut or paraphrase English, never attach English text to chunks. If the English of a unit does not fit at the minimum size: do not shrink further or overflow; split a group into smaller groups (down to single ayahs); if one ayah's English still does not fit, flag it.
+- If the API's word data has the end-of-ayah marker (verify), show it after each ayah's last Arabic word inside a group.
+- Fit: per layer, the largest font size (up to a configured max) at which the text fits, down to the configured minimum, up to the configured max lines. Fit is measured with real shaped-text metrics, not character counts.
+
+## 8. RENDERING
+- .ass subtitles (libass) burned with FFmpeg over template/background.png (scale to 1920x1080), H.264 + AAC, CPU libx264.
+- Three framed strips, top to bottom: 1 Arabic, 2 transliteration, 3 English; each layer centered in its strip. Rough positions in the 1672x941 original: strip 1 x 190-1480 y 380-500; strip 2 x 40-1630 y 520-622; strip 3 x 60-1610 y 636-745 (scale by 1920/1672). These are estimates: measure the real inner edges, store them in config with safe padding.
+- Reciter name: shown in ARABIC script, top-left of the sky area, to the right of the left lantern (roughly x 265-735, y 35-125 at 1920x1080; measure and store the box in config), in a decorative Arabic font set in config (reciter_font, default Aref Ruqaa; the user places the font file in template/fonts/). The name text comes from config (reciter_name_ar), typed by the user, never by the tool. Soft shadow or outline so it reads over the clouds. Keep it clear of the lantern, the arch and the minarets.
+- Surah title: small, top-center of the sky area, clear of the moon and the reciter name. Propose the exact spot in the first test render. The title text comes from the API data (title_ar, title_en).
+- Test early with one very long ayah (shaping, diacritics, wrapping, chunking, English fit) and two short consecutive ayahs (grouping). If libass fails, propose an HTML/headless-browser fallback and explain why before switching.
+
+## 9. MODELS
+- Set in config, pulled from Hugging Face on first run; switching changes only the config name. Default recognizer: naazimsnh02/whisper-large-v3-turbo-ar-quran. Default aligner: MahmoudAshraf/mms-300m-1130-forced-aligner via the ctc-forced-aligner package (language "ara"; align on normalized text, display the original Uthmani).
+- Check each repo exists and report its exact name and license. No benchmarks or comparisons. Recognition and alignment run locally; the Quran.com API is for text only. recognize.py must handle recordings longer than the model's 30-second window.
+
+## 10. ENVIRONMENT AND CONSTRAINTS
+- The user sets up Python, venv, FFmpeg with libass, the font (in template/fonts/) and PyTorch/CUDA. No setup instructions for those; if a script needs an extra package, name it exactly.
+- Code is written on a laptop (WSL Ubuntu, AMD GPU not usable, no real model runs there) and run on a desktop (Windows + WSL2, NVIDIA RTX 5070 12 GB, 32 GB RAM). Do not try to run the recognition or alignment models on the laptop. Everything that does not need a model must be testable on the laptop: provide a --fake mode for recognize.py (writes a words.json derived from a text fixture, with simulated errors and repeats) and a fake-aligner option for align.py. Models run only on the desktop (device "auto" = cuda if available, else cpu).
+- No Docker. No Git steps. All paths relative to the project root; machine-specific settings in optional config.local.yaml overriding config.yaml.
+- match.py is pure Python plus rapidfuzz: no torch, no audio.
+
+## 11. DATA FORMATS (contracts; change only with user approval)
+Everyone imports normalize_arabic(text: str) -> str from scripts/normalize.py (strips marks and tatweel, unifies alif/ya/ta-marbuta variants); nobody redefines it.
+
+### work/<surah>/text.json (fetch_text.py)
+    { "surah": 114, "riwaya": "hafs", "title_ar": "...", "title_en": "...",
+      "bismillah": null | { "arabic": "...", "translit": "...", "english": "...", "words": [Word] },
+      "ayahs": [ { "n": 1, "arabic": "<full Uthmani>", "translit": "<joined>", "english": "<API translation>", "words": [Word] } ] }
+    Word = { "i": 0, "arabic": "<Uthmani word>", "norm": "<normalize_arabic(arabic)>", "translit": "..." }
+Words joined in order must equal the ayah's Uthmani text (report any difference). Translit = join of per-word translit. bismillah is null for Surah 1 and 9. No per-word English.
+
+### work/<surah>/take_<n>/words.json (recognize.py)
+    { "take": 1, "audio": "audio/raw/114_t1.m4a", "duration": 61.2, "model": "<name>",
+      "words": [ { "text": "...", "norm": "<normalize_arabic(text)>", "start": 0.00, "end": 0.42, "conf": 0.93 } ] }
+Seconds from the start of that take's file; conf 0..1 or null.
+
+### work/<surah>/spans.json (match.py)
+    { "surah": 114, "bismillah_expected": true, "window": 4,
+      "spans": [ { "id": 0, "take": 1, "kind": "bismillah" | "ayah", "ayah": 3 | null, "start": 12.30, "end": 18.90,
+                   "word_range": [first, last], "complete": true, "conf": 0.91, "superseded": false } ],
+      "kept_ids": [0, 1, 2],
+      "dropped": [ { "take": 1, "start": 20.0, "end": 24.1, "reason": "abandoned_partial" | "superseded_repeat" | "unmatched", "ayah": 3 | null } ],
+      "flags": [Flag] }
+word_range indexes into that take's words.json. kept_ids = final order: bismillah first, then ayahs ascending, one complete non-superseded span per ayah. An ayah with no kept span gets a missing_ayah flag.
+
+### work/<surah>/aligned.json (align.py)
+    { "surah": 114,
+      "items": [ { "span_id": 0, "kind": "bismillah" | "ayah", "ayah": 3 | null, "take": 1,
+                   "cut_start": 12.20, "cut_end": 19.05,
+                   "words": [ { "i": 0, "start": 12.30, "end": 12.80, "conf": 0.88 } ], "conf": 0.90 } ],
+      "flags": [Flag] }
+Items follow kept_ids order. Times are source-take seconds; cut points are snapped to silence; word times lie inside [cut_start, cut_end]; i = Word.i of text.json.
+
+### work/<surah>/overrides.json (review.py, user decisions; may be absent)
+    { "drop_spans": [3], "shift": [ { "span_id": 2, "cut_start_delta": -0.10, "cut_end_delta": 0.20 } ],
+      "accept_flags": [ { "type": "low_align_conf", "ayah": 5 } ] }
+Applied to aligned.json after the align stage, before render: dropped spans make their ayah missing (flagged), shifts adjust cuts (and clamp word times), accepted flags no longer stop the run.
+
+### work/<surah>/timeline.json (render.py, read by make_ass.py)
+    { "surah": 114, "audio": "audio/cut/114.wav", "duration": 98.4,
+      "items": [ { "kind": "bismillah" | "ayah", "ayah": 3 | null, "start": 5.0, "end": 11.2,
+                   "words": [ { "i": 0, "start": 5.1, "end": 5.6, "conf": 0.88 } ] } ] }
+Times in the EDITED audio: t_final = t_source - cut_start + item offset.
+
+### Flag (spans, aligned, review.json)
+    { "type": "...", "take": 1 | null, "time": 12.3, "ayah": 3 | null, "severity": "info" | "warn" | "error", "detail": "..." }
+Types: low_match_conf, out_of_window, unmatched_segment, partial_ayah, missing_ayah, bismillah_missing, bismillah_unexpected, low_align_conf, abnormal_duration, low_word_conf_boundary, text_overflow, english_overflow. "time" = source-take seconds for match/align flags, final-audio seconds for review-stage flags.
+
+### Signatures
+    scripts/match.py: run_matching(text: dict, takes: list[dict], cfg: dict) -> dict   # spans.json structure; takes = parsed words.json in take order
+    scripts/align.py: run_alignment(text: dict, spans: dict, cfg: dict, project_root: str) -> dict   # aligned.json structure
+Both also have a CLI: python scripts/match.py --surah N, python scripts/align.py --surah N (read/write the work files). Thresholds come only from cfg.
+
+### Config keys the SPECIALIST modules read (BUILDER creates them in Step 1; values are starting guesses)
+    bismillah: true
+    matching: { repeat_window: 4, repeat_mode: last, min_match_score: 0.75, low_conf_score: 0.85 }
+    alignment: { silence_snap_max_s: 0.30, silence_threshold_db: -40, trim_last_word_silence: true, min_word_conf: 0.30, max_ayah_seconds_factor: 3.0 }
+    models: { aligner: "MahmoudAshraf/mms-300m-1130-forced-aligner", device: "auto" }
+
+## 12. DEFINITION OF DONE
+- Text in the video is identical to Quran.com's for every ayah shown, full Uthmani marks.
+- Short ayahs share a screen when all three layers fit readably, long ayahs split into chunks, English is always the full ayah-level translation.
+- Screen changes land within a fraction of a second of the voice.
+- Repeats and abandoned partials are gone from the final audio; no ayah is shown that was not completed.
+- Several takes become one continuous video in ayah order.
+- The user only looks at flagged spots, and their review decisions survive reruns.
+- A new surah needs one command and no code changes.# STATE: every role reads this first. Only BUILDER edits it, after the user pastes results from other roles.
+
+## Roles (all three know the whole plan; each does only its own job)
+- BUILDER (Copilot agent in VS Code): every file except match.py and align.py and their tests. Runs tests, edits this file, writes handoffs below.
+- SPECIALIST (a chat that can run code, no GPU, no Hugging Face downloads): only scripts/match.py, scripts/align.py, tests/test_match.py, tests/test_align.py.
+- AUDITOR (a different chat): reviews finished work against SPEC.md. Writes no features and no project files.
+If you think work outside your role is needed, add it under Open issues. Do not do it.
+
+## Plan
+| Step | What | Owner | Status |
+|---|---|---|---|
+| 0 | Ask the user: reciter name in Arabic (exact spelling), which English translation, header title format (Arabic only, or Arabic + English) | BUILDER | DONE |
+| 1 | config.yaml (with the keys in SPEC 11), requirements.txt, CLI skeleton with config validation, manifest/caching helper, logging | BUILDER | DONE |
+| 2 | normalize.py, fetch_text.py, fixtures (surahs 93, 112, 114, 55) | BUILDER | DONE |
+| A1 | AUDIT text fidelity and word integrity (optional, skip if low on quota) | AUDITOR | DONE |
+| 3 | template.ass, make_ass.py (grouping, chunking, English per ayah), test renders | BUILDER | DONE |
+| A2 | AUDIT screen logic and rendering (optional) | AUDITOR | DONE |
+| 4 | recognize.py (long audio, per-take cache) | BUILDER | DONE |
+| 5 | match.py + tests/test_match.py | SPECIALIST | DONE |
+| 6 | align.py + tests/test_align.py | SPECIALIST | DONE |
+| A3 | AUDIT recognition and alignment logic (REQUIRED) | AUDITOR | TODO |
+| 7 | review.py (review.json, review.html, overrides CLI) | BUILDER | TODO |
+| 8 | render.py (apply overrides, cut and join audio, timeline.json, encode) | BUILDER | TODO |
+| 9 | run_pipeline.py (stages, caching, review gate, exit codes), test with two takes | BUILDER | TODO |
+| A4 | AUDIT end to end against the Definition of Done (optional) | AUDITOR | TODO |
+| 10 | README with the per-surah command | BUILDER | TODO |
+
+## Locked decisions
+- Hafs; text from Quran.com API v4 only; window F+1 and F-3..F anchored at the furthest ayah; no forward skips; several takes with tracker carry-over.
+- Still background with three strips; English is ayah-level; groups of short ayahs, chunks of long ones.
+- Models: naazimsnh02/whisper-large-v3-turbo-ar-quran, MahmoudAshraf/mms-300m-1130-forced-aligner, set only in config.
+- Reciter: وهراني مصطفى إسماعيل; English translation: Saheeh International (Quran.com resource ID 20); transliteration: Transliteration (Quran.com resource ID 57); header title: Arabic only.
+- No Docker, no Git steps, the user sets up the environments.
+- SPECIALIST and AUDITOR chats can run code in a sandbox: match.py is fully testable there; align.py is tested there with a fake aligner and with the real one by BUILDER on the user's machine.
+
+## Current handoff (BUILDER fills this when a step belongs to another role; clears it when done)
+- Task: A3 re-audit fixes. BUILDER recognition/cache validation is updated; SPECIALIST must fix alignment and matching findings before A3 can pass.
+- Files to review: `scripts/recognize.py`, `scripts/align.py`, `scripts/match.py`, `tests/test_recognize.py`, `tests/test_align.py`, `tests/test_match.py`, all `tests/scenarios/*.json`, and `config.yaml`.
+- Inputs: `docs/SPEC.md`, especially sections 2, 4, 6, 9, and data formats in section 11; generated fake scenario outputs can be created with `python scripts/recognize.py --fake --scenario NAME --surah 114`.
+- Audit scope: verify long-audio recognition and per-take caching; fake scenario realism and expected metadata; matching window/F carry-over, no forward skips, word-level behavior, repeats, partials, out-of-window and Bismillah flags; alignment exact-text binding, kept order, source timing, silence clamping, confidence/duration flags, fake-aligner behavior, and desktop TODOs.
+- Out of scope: advancing to Step 7, or claiming desktop CTC verification from laptop tests.
+
+## Contract changes (proposed / approved)
+(none)
+
+## Desktop run log (commands to run on the desktop and what to paste back)
+- A3 pending desktop verification: run `python scripts/align.py --surah N --config config.yaml` with a real `work/N/take_1/words.json` audio path and accepted `spans.json`; paste the package version, model/device load result, and generated `aligned.json` item/word counts. This laptop has no configured CTC model/GPU runtime, so the real model path was not executed here.
+
+## Handoff log and decisions
+- Step 0 complete. Verified live at `https://api.quran.com/api/v4/resources/translations` on 2026-10-30: `20 Saheeh International` and `57 Transliteration`.
+- Step 1 complete. Added validated YAML configuration, dependency declarations, shared hashing/manifest/logging helpers, and the pipeline CLI skeleton. `py_compile`, CLI validation, manifest helper checks, and the Arabic-text guard passed.
+- Step 2 complete. Added shared Arabic normalization, Quran.com API v4 fetching with live resource verification and word-integrity checks, and generated fixtures for surahs 93, 112, 114, and 55. Fetch, structure, surah-1 Bismillah, compilation, and Arabic-text guard checks passed. Quran.com has a small word/verse mark discrepancy in some verses; it is recorded as `word_integrity_warning` only when normalized content still agrees.
+- Step 2 maintenance: `fetch_text.py` now removes complete `sup` elements, strips other HTML tags while preserving their inner text, normalizes spacing, reports distinct tag types, and fails if display fields retain angle brackets. Regenerated all four fixtures; the only tag type found was `sup`, and all fixture grep counts are zero.
+- A1 follow-up complete. Ayah-level transliteration is now built from the ordered cleaned per-word transliterations, so the invariant is exact. Independently verified live resources (`20 Saheeh International`, `57 Transliteration`), all four distinct fixtures, normalized Arabic word integrity, exact transliteration joins, Bismillah null rules for surahs 1 and 9, manifest cache hashes, compilation, and the Arabic-text guard.
+- Step 3 complete. Added configured strip/header boxes, ASS styles, Arabic-only title and Arabic reciter header events, Pillow-shaped text fitting, greedy whole-ayah grouping, word-boundary chunking, full ayah-level English, lead-time timing, and layout flags. Fixture checks passed for two-ayah grouping and a long-ayah chunk. FFmpeg is unavailable on this laptop, so no burned-video render was run.
+- A2 follow-up complete. Fixed wrapped-line emission (`\N`), pause holding through the next unit, source-box scaling to 1920x1080, text-width/waqf-aware chunk balancing, first aligned-word starts, duplicate overflow flags, and ASS time rollover. Compilation, focused ASS regressions, and the Arabic-text guard passed.
+- A2 re-audit follow-up complete. `make_ass.py` now reads actual font family names from configured font files, ends events at the next lead-time-adjusted visible start without overlap, and selects pause-aware chunk boundaries by rendered-width balance while avoiding undersized final chunks. Added `tests/test_make_ass.py`; four tests passed, generated `/tmp/a2-reaudit.ass` was inspected, and compilation plus the Arabic-text guard passed.
+- A2 final follow-up complete. Applied the configured reciter font family to the Header style and changed chunk scoring to measure complete Arabic/transliteration phrases with Pillow, including spaces and shaping. Updated regressions; four tests passed, `/tmp/a2-final.ass` was generated and inspected, and compilation plus the Arabic-text guard passed.
+- A2 certification tests complete. Added explicit Header font, content-event pause-hold, and Quranic pause-boundary assertions to `tests/test_make_ass.py`; the complete focused suite passed (`Ran 4 tests ... OK`), along with compilation and the Arabic-text guard.
+- A3 implementation pass complete locally. `align.py` now uses the documented `ctc-forced-aligner` pipeline for real audio, reserves synthetic alignment for fake/test inputs, validates exact word counts and finite ordered bounds/confidence, and performs PCM energy-based silence snapping using the configured threshold and search window. `recognize.py` rejects non-finite timestamps and invalidates malformed or wrong-take caches; `match.py` safely scores empty expected sequences. Added malformed-output and generated-WAV silence tests. Focused A3 suite passed (`Ran 18 tests ... OK`) and changed modules compile. Real CTC model execution remains desktop-only. The Arabic guard still reports pre-existing API-derived literals in `tests/test_align.py` and `tests/test_match.py`; this is recorded rather than rewriting Specialist-owned fixtures.
+- A3 re-audit failed. Specialist findings: remove hard-coded Quran text from `tests/test_align.py` and `tests/test_match.py` by loading `tests/fixtures/surah_114.json`; synthetic alignment must never be selected for missing real-audio metadata; silence detection must support project `.m4a` recordings and report decoding failures; restore reachable `bismillah_unexpected` detection; matching must support insertions/deletions rather than only equal-length candidate slices. BUILDER strengthened recognizer confidence and cache validation (finite confidence, normalized words, duration, requested take/audio/model checks). No Step 7 work may begin until these findings, full focused tests, and desktop CTC verification are complete.
+- Step 4 complete. Added lazy Transformers Whisper recognition with 30-second chunks and 5-second overlap, word timestamps/confidence normalization, normalized ASR words, per-take audio-hash/model caching, and clear CLI errors. Synthetic parsing/cache checks, compilation, CLI help, and Arabic-text guard passed; real model/audio execution remains a desktop run because this laptop has no configured model runtime.
+- Step 4 fake mode complete. `python scripts/recognize.py --fake --scenario NAME --surah N` reads only `tests/fixtures/surah_N.json`, writes deterministic fake `work/N/take_<n>/words.json` files with `audio: fake://...` and `model: fake`, and never loads audio or a model. Scenarios are `clean`, `repeat_last`, `restart_mid`, `back_4`, `back_5`, `two_takes`, `errors`, `no_pause`, and `no_bismillah`; seed is fixed and timings/confidence/errors are reproducible. Each `tests/scenarios/<name>.json` contains `scenario`, `surah`, `bismillah_expected`, `window`, and `expected` with `kept_ayahs`, `dropped` span reasons, and expected flag types. The fake words contract remains exactly `take`, `audio`, `duration`, `model`, `words`, with each word containing `text`, `norm`, `start`, `end`, and `conf`; genuine words use fixture `Word.norm`, and generated scenario text is never display text. `tests/test_recognize.py` runs every scenario and validates this shape.
+- Step 5 complete by Specialist. `match.py` implements DP word-level alignment, furthest-ayah anchor tracking, candidate window enforcement, Bismillah handling, repeats, abandoned restarts, out-of-window jumps, dropped reasons, required flags, and `spans.json`; `tests/test_match.py` passes all 9 tests.
+- Step 6 complete by Specialist. `align.py` produces the required `aligned.json`, preserves kept order/source timing and text word indices, includes confidence/duration flags, provides fake-aligner coverage, and isolates desktop CTC execution; `tests/test_align.py` passes all 5 tests.
+
+## Open issues
+(none)

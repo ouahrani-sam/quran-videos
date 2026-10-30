@@ -1,0 +1,1 @@
+{"scenario":"repeat_last","surah":114,"bismillah_expected":true,"window":4,"expected":{"kept_ayahs":[1,2,3,4,5,6],"dropped":[{"reason":"superseded_repeat"}],"flags":[]}}
